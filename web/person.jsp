@@ -29,8 +29,8 @@
 <h4> Form # 2 updatePerson</h4>
 <div class="border">
     <form name="updatePerson" action="./person" method="post">
-        <input type="hidden" name="formName" value="updatePerson">
-        <input type="hidden" name="personId" value=${personId}>
+        <input type="hidden" name="formName" value="updatePerson" />
+        <input type="hidden" name="personId" value=${personId} />
 
         <div>
             <input type="text" name="firstName" value="${firstName}" placeholder="First Name"/>
