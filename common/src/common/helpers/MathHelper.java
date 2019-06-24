@@ -1,4 +1,4 @@
 package common.helpers;
 
-public class MathHelper {
+public class MathHelper extends CommonHelperLog {
 }

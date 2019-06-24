@@ -18,12 +18,8 @@
 <form name="choosePerson" action="./person" method="post">
     <input type="hidden" name="formName" value="choosePerson" />
 
-    <select name="selectPerson">
-        <option value="1"> Bipin</option>
-        <option value="2"> Sean</option>
-        <option value="3"> Dan</option>
-        <option value="4"> James</option>
-    </select>
+        ${selectPerson}
+
 
     <button type="submit"> Select Person</button>
 
@@ -33,8 +29,8 @@
 <h4> Form # 2 updatePerson</h4>
 <div class="border">
     <form name="updatePerson" action="./person" method="post">
-        <input type="hidden" name="formName" value="updatePerson" />
-        <input type="hidden" name="personId" value="0"/>
+        <input type="hidden" name="formName" value="updatePerson">
+        <input type="hidden" name="personId" value=${personId}>
 
         <div>
             <input type="text" name="firstName" value="${firstName}" placeholder="First Name"/>
@@ -46,13 +42,15 @@
             <input type="text" name="lastName" value="${lastName}" placeholder="Last Name"/>
         </div>
         <div>
-            <input type="text" name="birthDate" value="${birthDate}" placeholder="Birth Date"/>
+            <input type="date" name="birthDate" value="${birthDate}" placeholder="Birth Date"/>
         </div>
         <div>
             <input type="text" name="socialSecurityNumber" value="${socialSecurityNumber}" placeholder="SSN"/>
         </div>
 
         <button type="submit"> Update Person </button>
+        <br>
+        ${updateStatus}
 
     </form>
 
